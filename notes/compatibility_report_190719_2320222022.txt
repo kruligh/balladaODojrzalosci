@@ -1,0 +1,88 @@
+Converting GML script: ${project_dir}\scripts\emmiterStage1Init\emmiterStage1Init.gml
+Converted description /// @description Stage1
+
+Converting GML script: ${project_dir}\scripts\emmiterStage2Init\emmiterStage2Init.gml
+Converted description /// @description Stage2
+
+Converting GML script: ${project_dir}\scripts\wordwrapString\wordwrapString.gml
+Converted description /// @description @function wordwrapString(text, width, delimiter, wordsplitSize)/// @param text
+/// @param  width
+/// @param  delimiter
+/// @param  wordsplitSize
+
+!!! Font pixelFont uses a font (04b20) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\pixelFont\pixelFont.gms1.png
+!!! Font pixelFontBig uses a font (04b20) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\pixelFontBig\pixelFontBig.gms1.png
+Converting GML script: ${project_dir}\objects\Explosion\Create_0.gml
+Converted description /// @description Play sound
+
+Converting GML script: ${project_dir}\objects\Controller\Create_0.gml
+Converted description /// @description Init
+
+Converting GML script: ${project_dir}\objects\Controller\Step_0.gml
+Converted builtin - line 23: view_angle = viewAnglePlayer - vrAngleY + viewAngleShader -> __view_set( e__VW.Angle, 0, viewAnglePlayer - vrAngleY + viewAngleShader )
+Converted builtin - line 38: view_angle += sin(viewAngleAmbient) * 10 -> __view_set( e__VW.Angle, 0, __view_get( e__VW.Angle, 0 ) + (sin(viewAngleAmbient) * 10) )
+Converted description /// @description View Angle
+
+Converting GML script: ${project_dir}\objects\Boss\Create_0.gml
+Converted description /// @description Init
+
+Converting GML script: ${project_dir}\objects\Boss\Step_0.gml
+Converted description /// @description Logic
+
+Converting GML script: ${project_dir}\objects\Grid\Create_0.gml
+Converted description /// @description Init 
+Converted string - line 11: "[WARNING] Controller instance is missing!\n[GRID] Reinitialize Controller" -> "[WARNING] Controller instance is missing!\\n[GRID] Reinitialize Controller"
+
+Converting GML script: ${project_dir}\objects\Grid\Draw_0.gml
+Converted description /// @description Draw grid
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Converting GML script: ${project_dir}\objects\Emmiter\Step_0.gml
+Converted description /// @description Execute emmiterStage scripts
+
+Converting GML script: ${project_dir}\objects\HUD\Create_0.gml
+Converted builtin - line 23: view_angle -> __view_get( e__VW.Angle, 0 )
+Converted description /// @description Init 
+Converted string - line 11: "[WARNING] Controller instance is missing!\n[HUD] Reinitialize Controller" -> "[WARNING] Controller instance is missing!\\n[HUD] Reinitialize Controller"
+
+Converting GML script: ${project_dir}\objects\HUD\Step_0.gml
+Converted description /// @description Automatic hapiness & life
+
+Converting GML script: ${project_dir}\objects\ShaderController\Create_0.gml
+Converted description /// @description Application surface
+
+Converting GML script: ${project_dir}\objects\ShaderController\Step_0.gml
+Converted description /// @description Debug controles
+
+Converting GML script: ${project_dir}\objects\ShaderController\Draw_77.gml
+Converted builtin - line 3: background_colour = c_black -> __background_set_colour( c_black )
+Converted builtin - line 4: background_showcolour = true -> __background_set_showcolour( true )
+Converted builtin - line 6: background_showcolour = false -> __background_set_showcolour( false )
+
+Converting GML script: ${project_dir}\objects\Player\Create_0.gml
+Converted description /// @description Init
+Converted string - line 11: "[WARNING] Controller instance is missing!\n[PLAYER] Reinitialize Controller" -> "[WARNING] Controller instance is missing!\\n[PLAYER] Reinitialize Controller"
+Converted string - line 18: "[WARNING] Grid instance is missing!\n[PLAYER] Reinitialize Grid" -> "[WARNING] Grid instance is missing!\\n[PLAYER] Reinitialize Grid"
+
+Missing audiogroup for sound: 'sndShoot01' - setting to default audio group
+Missing audiogroup for sound: 'sndExplosion' - setting to default audio group
+Missing audiogroup for sound: 'sndPowerUp' - setting to default audio group
+Missing audiogroup for sound: 'ost01' - setting to default audio group
+Missing audiogroup for sound: 'ostBugz' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'background/__background_set_colour.gml'
+Added compatibility script 'background/__background_set_showcolour.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'background/__background_get_colour_element.gml'
+Added compatibility script 'background/__background_set_element.gml'
+Added compatibility script '__global_object_depths.gml'
