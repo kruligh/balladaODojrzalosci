@@ -1,5 +1,5 @@
 
-    draw_self();
+//    draw_self();
     if (position <= 3) {
         draw_set_color(c_red)
         var pointX1 = 0;

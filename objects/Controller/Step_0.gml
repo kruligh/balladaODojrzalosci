@@ -58,6 +58,9 @@ if(global.bujanie) {
             bossInit = false;
             isGandalf = false;
 			break;
+		case 1:
+			//dev
+			global.stage = 1;
 		case 8:
             global.stage = 1;
 			global.bujanie = true;

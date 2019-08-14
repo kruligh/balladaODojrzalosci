@@ -5,6 +5,9 @@
         currentLyric = lyrics[? global.gameTime];
         currentLyric = wordwrapString(currentLyric, 920, "# #", 8);
     }
+	
+	if(global.showLirycs) {
+	
     drawShakeText(string(currentLyric),
             choose(c_white, c_aqua, c_lime, c_red, c_blue, c_fuchsia, c_yellow),
             fa_middle,
@@ -14,4 +17,4 @@
             270,
             random(3),
             random(3));
-
+	}
