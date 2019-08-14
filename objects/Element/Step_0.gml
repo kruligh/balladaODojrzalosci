@@ -2,14 +2,7 @@
     //Set image scale;
     image_xscale = 0.003 * spd + 0.22;
     image_yscale = image_xscale;
-    
-	if (keyboard_check(vk_space)) {
-		show_debug_message("REVERT MADAFAKA");
-		global.isTimeRevert = true;
-	} else {
-		global.isTimeRevert = false;	
-	}
-	
+
     if (reached == true) {
         //Movement
         pointX = Controller.pointDown[position];

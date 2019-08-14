@@ -60,20 +60,25 @@ if(global.bujanie) {
 			break;
 		case 1:
 			//dev
-			global.stage = 1;
-		case 8:
+			
+			//global.showLirycs = false;
+			//global.stage = 1;
+			break;
+		case 10:
             global.stage = 1;
 			global.bujanie = true;
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "INTRO");
-
             break;
 		case 20:
-			global.gameTime = true;
+			ds_list_add(global.messages, "OOOOPS");
+			global.isTimeRevert = true;
 			break;
     	case 26:
+			global.messages = ds_list_create();
+			ds_list_add(global.messages, "SWAG");
 			global.stage = 2;
-			global.gameTime = false;
+			global.isTimeRevert = false;
 		case 60:
 			
             if (isGandalf = false) {

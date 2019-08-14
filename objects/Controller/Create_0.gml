@@ -158,4 +158,4 @@ ds_map_add(global.lyrics, 38, "");
 
 	global.isTimeRevert = false;
 	global.bujanie = false;
-	global.showLirycs = false;
+	global.showLirycs = true;
