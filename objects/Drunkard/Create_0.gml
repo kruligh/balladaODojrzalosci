@@ -14,5 +14,3 @@
     changeSpd = 2;
     
     message = randomMessage();
-    sprite_index = randomShroomSprite(sprite_index);
-

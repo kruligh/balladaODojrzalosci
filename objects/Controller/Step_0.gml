@@ -70,8 +70,7 @@ if(global.bujanie) {
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "INTRO");
             break;
-		case 20:
-			ds_list_add(global.messages, "OOOOPS");
+		case 21:
 			global.isTimeRevert = true;
 			break;
     	case 26:
@@ -141,21 +140,7 @@ if(global.bujanie) {
 /*  */
 
 
-	bunnyTimer++;
-	if (bunnyTimer > bunnyTime) {
-		bunnyTimer = 0;
-		bunnyTime = choose(1, 2, 3, 4) * room_speed;
-		var luck = choose(1, 1, 1, 1, 5);
-		
-		var result = luck;
-		with (Element) {
-			if (result > 0) {
-				sprite_index = dupa;
-				result = 0;
-			}
-		}
-		
-	}
+
 	
 
 

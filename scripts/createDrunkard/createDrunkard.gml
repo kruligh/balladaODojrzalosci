@@ -8,3 +8,4 @@
     element.position = argument0;
     element.changeSpd = argument1;
     element.timer = argument2;
+	element.sprite_index = sprDrunkard;

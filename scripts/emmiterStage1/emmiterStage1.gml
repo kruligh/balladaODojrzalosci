@@ -7,7 +7,7 @@
 	}
 	
 	if(emmiterTimer > 120 and emmiterTimer mod 60 == 0) {
-		createElement(position, 8);
+		createDrunkard(position, 8, 10);
 	}
 
 
