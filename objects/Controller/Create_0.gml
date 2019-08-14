@@ -114,11 +114,39 @@
 
     global.lyrics = ds_map_create();
     
-    ds_map_add(global.lyrics, 10, "podrywałem raz dziewczyne, i mnie pyta ile dojrzałości ileee");
-	ds_map_add(global.lyrics, 12, "se na 10 dasz synek ile");
-	ds_map_add(global.lyrics, 14, "przekaz przyszedlem dac do kabiny");
-	ds_map_add(global.lyrics, 16, "podrywałem raz dziewczyne, i mnie pyta ile dojrzałości ileee");
+	ds_map_add(global.lyrics, 2, "dominik krulig bugz");
+	ds_map_add(global.lyrics, 4, "ballada o dojrzalosci");
+	ds_map_add(global.lyrics, 6, "");
+	ds_map_add(global.lyrics, 7, "sluchaj tego");
+	ds_map_add(global.lyrics, 8, "");
+	
+	
+ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne, i mnie pyta");
+ds_map_add(global.lyrics, 12, "ile dojrzałości ileee");
+ds_map_add(global.lyrics, 13, "? ile ile ile ?");
+ds_map_add(global.lyrics, 14, "sobie na 10 dasz synek");
+ds_map_add(global.lyrics, 15, "?? ile ??");
+ds_map_add(global.lyrics, 16, "co bym zrobil zeby dac punkt wiecej ??");
+ds_map_add(global.lyrics, 18, "?? po sikaniu umyl rece ?? ");
+ds_map_add(global.lyrics, 19, "?? czy przed tez ??");
+// intro2
+ds_map_add(global.lyrics, 20, "podrywalem raz dziewczyne, i mnie pyta");
+ds_map_add(global.lyrics, 22, "ile dojrzałości ileee");
+ds_map_add(global.lyrics, 23, "? ile ile ile ?");
+ds_map_add(global.lyrics, 24, "sobie na 10 dasz synek");
+ds_map_add(global.lyrics, 25, "?? ?? ??");
 
+// swag
+
+ds_map_add(global.lyrics, 27, "i jej mówie mała osiem");
+ds_map_add(global.lyrics, 28, "8888888888888888");
+ds_map_add(global.lyrics, 29, "bo jestem gosciem co");
+ds_map_add(global.lyrics, 30, "za robote ma forse");
+ds_map_add(global.lyrics, 31, "i to sa te pieniadze dobre");
+ds_map_add(global.lyrics, 32, "wiesz ja rozmawiam z kompem");
+ds_map_add(global.lyrics, 34, "i choc lubię patrzec tez na stroje skape");
+ds_map_add(global.lyrics, 36, "jestem gotowy na związek");
+ds_map_add(global.lyrics, 38, ""); 
 
 
 ///Messages

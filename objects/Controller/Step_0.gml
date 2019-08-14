@@ -25,11 +25,7 @@
     
     //View Angle All
     __view_set( e__VW.Angle, 0, viewAnglePlayer - vrAngleY + viewAngleShader );
-    
-
-
-
- 
+     
 // bujanie
 if(global.bujanie) {
     viewAngleAmbient += 0.005;
