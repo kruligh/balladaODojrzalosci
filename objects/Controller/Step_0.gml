@@ -62,11 +62,11 @@ if(global.bujanie) {
 		case 1:
 			//dev
 			
-			global.showLirycs = false;
-			global.stage = 2;
+			//global.showLirycs = false;
+			//global.stage = 2;
 			break;
-		//case 10:
-		case 20:
+		case 10:
+		//case 20:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "INTRO");
             global.stage = 1;

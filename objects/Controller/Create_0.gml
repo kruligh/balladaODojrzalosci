@@ -118,7 +118,7 @@
 	ds_map_add(global.lyrics, 6, "");
 	ds_map_add(global.lyrics, 7, "sluchaj tego");
 	ds_map_add(global.lyrics, 8, "");
-	
+	ds_map_add(global.lyrics, 9, "sluchaj tego mloda");
 	
 ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne, i mnie pyta");
 ds_map_add(global.lyrics, 12, "ile dojrzałości ileee");
