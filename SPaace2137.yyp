@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "29c2382a-5e8e-4404-9e5f-76b5b296c339",
+            "Value": {
+                "id": "7bb28a96-4807-43b6-9014-30fda7012f7e",
+                "resourcePath": "sprites\\sprComp\\sprComp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2a10f927-c8a6-47ef-8bbc-0f36b89c977c",
             "Value": {
                 "id": "ae90e81d-7d32-405f-8586-834d18930ce9",
@@ -559,6 +567,14 @@
             }
         },
         {
+            "Key": "5778643f-4baf-4b0a-aa8c-c6a8a58636bf",
+            "Value": {
+                "id": "2e6b1d8c-7a83-4d22-8298-52813a3897ee",
+                "resourcePath": "sprites\\sprDoctor\\sprDoctor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5c137bd6-d48d-4bed-a88d-7c165ed40a2a",
             "Value": {
                 "id": "9a688b51-f0e2-4165-93a8-ef08b8a51c3e",
@@ -676,6 +692,14 @@
                 "id": "b3cb754a-71ae-46eb-a397-2eff119ee98f",
                 "resourcePath": "objects\\Jumper\\Jumper.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7cdc1611-e93b-4f87-a890-84d72f1b8b70",
+            "Value": {
+                "id": "eb6c1653-5ca5-48ae-8d8f-065683d89834",
+                "resourcePath": "sprites\\sprVirus\\sprVirus.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1148,6 +1172,14 @@
                 "id": "e8aa2049-accc-4dd1-9a29-f83837c35eae",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd312f30-a74b-4fe2-a313-4b2cb1e1f2f1",
+            "Value": {
+                "id": "52e9d7be-4695-43f5-845e-0d1092c42b29",
+                "resourcePath": "sprites\\sprKrzeslo\\sprKrzeslo.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

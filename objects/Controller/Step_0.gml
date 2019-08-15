@@ -63,7 +63,7 @@ if(global.bujanie) {
 			//dev
 			
 			global.showLirycs = false;
-			//global.stage = 4;
+			global.stage = 7;
 			break;
 		case 10:
 		//case 20:
@@ -121,15 +121,33 @@ if(global.bujanie) {
 			global.stage = 5;
 			
 			break;
-		case 60:
+		case 68:
+			global.messages = ds_list_create();
+			ds_list_add(global.messages, "POWAGA");
+
+			global.stage = 6;
+			global.bujanie = false;
 			
-            if (isGandalf = false) {
-       //         instance_create(0, 0, Gandalf);
-         //       bossController = true;
+			if (isGandalf = false) {
+                instance_create(0, 0, Gandalf);
+			    bossController = true;
             }
-            //isGandalf = true;
+            isGandalf = true;
 			
-            break;
+			break;	
+		case 80:
+			global.messages = ds_list_create();
+			ds_list_add(global.messages, "PROGRAMISTA");
+			
+			global.stage = 7;
+			global.bujanie = true;
+			
+			var chosenShader = 2;
+            var chosenEffect = 1;
+            initEffect(chosenEffect, 9 * 60, chosenShader);
+			
+		break;
+
     }
     
     if (bossController == true) {
