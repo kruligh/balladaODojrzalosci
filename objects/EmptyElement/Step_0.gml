@@ -23,7 +23,7 @@
 	        instance_destroy();
 	    }
 
-		if (global.isTimeRevert and self.y < 10) {
+		if (global.isTimeRevert and self.y < 20) {
 		        instance_destroy();
 		    }
 

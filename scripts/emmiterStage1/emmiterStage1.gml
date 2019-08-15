@@ -6,7 +6,7 @@
 		createEmptyElement(position, 8);	
 	}
 	
-	if(emmiterTimer > 120 and emmiterTimer mod 60 == 0) {
+	if(emmiterTimer > 120 and emmiterTimer mod 61 == 0) {
 		createElement(position, 8, sprDrunkard);
 	}
 

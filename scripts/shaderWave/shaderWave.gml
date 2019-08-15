@@ -37,7 +37,7 @@ with(ShaderController) {
             case 1:
                 shaderT += 0.2;
                 shaderControlB += sin(shaderT) * 3;
-                if (shaderT > 50) {
+                if (shaderT > 100) {
                     shaderInit = false;
                     shaderT = 0;
                     return -1;

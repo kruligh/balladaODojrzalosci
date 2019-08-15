@@ -73,14 +73,51 @@ if(global.bujanie) {
 			global.bujanie = true;
 
             break;
-		case 21:
+		case 20:
+		if(global.timer mod 30 == 0) {
 			global.isTimeRevert = true;
+		}
+			
 			break;
     	case 26:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "SWAG");
 			global.stage = 2;
 			global.isTimeRevert = false;
+			
+			break;
+		case 32:
+			var chosenShader = 1;
+            var chosenEffect = 1;
+            initEffect(chosenEffect, 300, chosenShader);
+			break;
+		case 38:
+			global.messages = ds_list_create();
+			ds_list_add(global.messages, "WSTEP");
+			ds_list_add(global.messages, "OPIS");
+			ds_list_add(global.messages, "COS TAM");
+			
+			global.stage = 3;
+			
+			break;
+		case 48:
+			global.messages = ds_list_create();
+			ds_list_add(global.messages, "AKCJA");
+			global.stage = 4;
+			
+			var chosenShader = 2;
+            var chosenEffect = 1;
+            initEffect(chosenEffect, 9 * 60, chosenShader);
+			
+			break;
+		case 57:
+			global.messages = ds_list_create();
+			ds_list_add(global.messages, "HAHA");
+			ds_list_add(global.messages, "KAWAL");
+			ds_list_add(global.messages, "XDD");
+			global.stage = 5;
+			
+			break;
 		case 60:
 			
             if (isGandalf = false) {

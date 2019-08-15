@@ -113,18 +113,21 @@
 
     global.lyrics = ds_map_create();
     
-	ds_map_add(global.lyrics, 2, "dominik krulig bugz");
+	ds_map_add(global.lyrics, 1, "dominik");
+		ds_map_add(global.lyrics, 2, "dominik krulig");
+			ds_map_add(global.lyrics, 3, "dominik krulig bugz");
 	ds_map_add(global.lyrics, 4, "ballada o dojrzalosci");
 	ds_map_add(global.lyrics, 6, "");
 	ds_map_add(global.lyrics, 7, "sluchaj tego");
-	ds_map_add(global.lyrics, 8, "");
+	ds_map_add(global.lyrics, 8, "sluchaj tego mlody");
 	ds_map_add(global.lyrics, 9, "sluchaj tego mloda");
 	
-ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne, i mnie pyta");
+ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne");
+ds_map_add(global.lyrics, 11, "podrywalem raz dziewczyne i mnie pyta ile");
 ds_map_add(global.lyrics, 12, "ile dojrzałości ileee");
-ds_map_add(global.lyrics, 13, "? ile ile ile ?");
+ds_map_add(global.lyrics, 13, "?? ile ??");
 ds_map_add(global.lyrics, 14, "sobie na 10 dasz synek");
-ds_map_add(global.lyrics, 15, "?? ile ??");
+ds_map_add(global.lyrics, 15, "?");
 ds_map_add(global.lyrics, 16, "co bym zrobil zeby dac punkt wiecej ??");
 ds_map_add(global.lyrics, 18, "?? po sikaniu umyl rece ?? ");
 ds_map_add(global.lyrics, 19, "?? czy przed tez ??");
@@ -137,7 +140,7 @@ ds_map_add(global.lyrics, 25, "?? ?? ??");
 
 // swag
 
-ds_map_add(global.lyrics, 27, "i jej mówie mała osiem");
+ds_map_add(global.lyrics, 26, "i jej mówie mała osiem");
 ds_map_add(global.lyrics, 28, "8888888888888888");
 ds_map_add(global.lyrics, 29, "bo jestem gosciem co");
 ds_map_add(global.lyrics, 30, "za robote ma forse");
