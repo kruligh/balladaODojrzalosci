@@ -14,9 +14,11 @@
         "c8b31185-7ce8-435c-a38b-96549d4e35d5",
         "c5255c6e-2729-4029-8e02-b89847ccff85",
         "bb4fe379-5e9c-44a1-8b76-f7f2407f3693",
+        "980e1a71-7d70-45f0-8d4c-a0f7dfc27806",
         "bd4de96b-f7ce-45aa-9b10-e1684e33f6e1",
         "d4527393-38b4-4039-9046-699f8e5f9f30",
-        "4ce69a2c-52a5-45ae-93e3-089fcb524c80"
+        "4ce69a2c-52a5-45ae-93e3-089fcb524c80",
+        "d536b23e-28f8-4016-8ab4-4721775ed586"
     ],
     "filterType": "GMScript",
     "folderName": "Emmiter",

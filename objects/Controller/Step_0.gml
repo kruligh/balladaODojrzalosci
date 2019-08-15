@@ -62,8 +62,8 @@ if(global.bujanie) {
 		case 1:
 			//dev
 			
-			//global.showLirycs = false;
-			//global.stage = 2;
+			global.showLirycs = false;
+			global.stage = 4;
 			break;
 		case 10:
 		//case 20:
@@ -74,9 +74,9 @@ if(global.bujanie) {
 
             break;
 		case 20:
-		if(global.timer mod 30 == 0) {
-			global.isTimeRevert = true;
-		}
+			if(global.timer mod 30 == 0) {
+				global.isTimeRevert = true;
+			}
 			
 			break;
     	case 26:

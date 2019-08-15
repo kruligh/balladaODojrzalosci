@@ -11,6 +11,12 @@
             case 2:
                 emmiterStage2();
                 break;
+			case 3:
+                emmiterStage3();
+                break;
+			case 4:
+                emmiterStage4();
+                break;
         }
     }
 

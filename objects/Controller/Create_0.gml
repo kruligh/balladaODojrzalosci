@@ -141,8 +141,7 @@ ds_map_add(global.lyrics, 25, "?? ?? ??");
 // swag
 
 ds_map_add(global.lyrics, 26, "i jej mówie mała osiem");
-ds_map_add(global.lyrics, 28, "8888888888888888");
-ds_map_add(global.lyrics, 29, "bo jestem gosciem co");
+ds_map_add(global.lyrics, 28, "bo jestem gosciem co");
 ds_map_add(global.lyrics, 30, "za robote ma forse");
 ds_map_add(global.lyrics, 31, "i to sa te pieniadze dobre");
 ds_map_add(global.lyrics, 32, "wiesz ja rozmawiam z kompem");
