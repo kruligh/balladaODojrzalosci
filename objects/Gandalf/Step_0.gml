@@ -12,7 +12,7 @@ if (self.y < yst) && (intr = 1)
         //generate enemies
     }
     
-    if (global.gameTime >= 74)
+    if (global.destroyGandalf)
     {
         intr = 4;
         image_xscale -= 0.05;

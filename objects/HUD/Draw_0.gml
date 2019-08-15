@@ -1,7 +1,7 @@
-
+/*
     viewRotate = Controller.viewAnglePlayer;
 
-    var shake = choose(1, -1) * random(2);
+    var shake = 1;//choose(1, -1) * random(2);
 
     var hapinessLength = (global.hapiness / 100) * barMax;
     var lifeLength = (global.life / 100) * barMax;

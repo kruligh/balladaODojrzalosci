@@ -63,7 +63,7 @@ if(global.bujanie) {
 			//dev
 			
 			global.showLirycs = false;
-			global.stage = 7;
+			//global.stage = 7;
 			break;
 		case 10:
 		//case 20:
@@ -79,17 +79,18 @@ if(global.bujanie) {
 			}
 			
 			break;
+		case 23:
+			var chosenShader = 4;
+            var chosenEffect = 2;
+            initEffect(chosenEffect, 100, chosenShader);
+			break;
     	case 26:
+			resetShader();
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "SWAG");
 			global.stage = 2;
 			global.isTimeRevert = false;
 			
-			break;
-		case 32:
-			var chosenShader = 1;
-            var chosenEffect = 1;
-            initEffect(chosenEffect, 300, chosenShader);
 			break;
 		case 36:
 			global.stage = 3;
@@ -108,11 +109,12 @@ if(global.bujanie) {
 			ds_list_add(global.messages, "AKCJA");
 			global.stage = 4;
 			
-			var chosenShader = 2;
+			var chosenShader = shaders.shader_wave;
             var chosenEffect = 1;
-            initEffect(chosenEffect, 9 * 60, chosenShader);
+            initEffect(1, 9 * 60, 2);
 			
 			break;
+
 		case 55:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "HAHA");
@@ -120,22 +122,29 @@ if(global.bujanie) {
 			ds_list_add(global.messages, "XDD");
 			global.stage = 5;
 			
+
+            initEffect(2, 100, 4);
 			break;
+		case 58:
+			resetShader();
+			break;
+		case 67:
+			global.bujanie = false;
+			break;	
 		case 68:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "POWAGA");
 
 			global.stage = 6;
-			global.bujanie = false;
 			
-			if (isGandalf = false) {
-                instance_create(0, 0, Gandalf);
-			    bossController = true;
-            }
             isGandalf = true;
+			instance_create(0, 0, Gandalf);
+			global.destroyGandalf = false;
+			//    bossController = true;
+                        
 			
 			break;	
-		case 80:
+		case 78:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "PROGRAMISTA");
 			
@@ -146,7 +155,59 @@ if(global.bujanie) {
             var chosenEffect = 1;
             initEffect(chosenEffect, 9 * 60, chosenShader);
 			
-		break;
+			break;
+		
+		case 81:
+			global.destroyGandalf = true;
+			break;
+		case 87:
+			global.messages = ds_list_create();
+
+			ds_list_add(global.messages, "DIETA");
+			ds_list_add(global.messages, "BADANIA");
+			ds_list_add(global.messages, "DOJRZALOSC");
+			global.stage = 8;
+			
+			var chosenShader = 5;
+            var chosenEffect = 1;
+            initEffect(chosenEffect, 9 * 60, chosenShader);
+			break;
+		case 97:
+			global.messages = ds_list_create();
+
+			ds_list_add(global.messages, "ROZPACZ");
+			ds_list_add(global.messages, "KRYZYS");
+			ds_list_add(global.messages, "GIMNASTYKA");	
+			
+			global.stage = 9;
+		
+			break;
+		case 100:
+			global.stage = 10;
+			var chosenShader = shaders.shader_wave;
+            var chosenEffect = 2;
+            initEffect(1, 9 * 60, 2);
+			break;
+		case 125:
+			global.stage = 11;
+			global.messages = ds_list_create();
+
+			ds_list_add(global.messages, "KARCZOCH");
+			ds_list_add(global.messages, "BROKUL");
+			ds_list_add(global.messages, "RUKOLA");
+			ds_list_add(global.messages, "RZODKIEWKA");
+			ds_list_add(global.messages, "WITAMINY");
+			ds_list_add(global.messages, "VEGE");
+			break;
+		case 150:
+			global.stage = 12;
+			global.messages = ds_list_create();
+
+			ds_list_add(global.messages, "DOWIDZENIA");
+			ds_list_add(global.messages, "SUBSKRYBUJ");
+			ds_list_add(global.messages, "NAJBA MJUSIK");
+
+			break;
 
     }
     

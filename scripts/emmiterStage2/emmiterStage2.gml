@@ -16,6 +16,10 @@
 	if(emmiterStage2Timer > 100 and emmiterStage2Timer mod 60 == 0) {
 		createElement(position, 8, sprMoney);
 	}
+	
+	if(emmiterStage2Timer > 300 and emmiterStage2Timer mod 60 == 0) {
+		createElement(position, 8, sprVirus);
+	}
 
   }
 

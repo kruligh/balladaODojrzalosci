@@ -5,7 +5,7 @@
 	image_speed = 0.2;
     t = 0;
     time = choose(60,90,120,150,180);
-    yst = y * -1; // Tutaj ustawiawsz jak daleko ma sie wysunac gandalf, nie mam pojecia co stoi za nazwa yst xDD
+    yst = y * -0.8; // Tutaj ustawiawsz jak daleko ma sie wysunac gandalf, nie mam pojecia co stoi za nazwa yst xDD
     spd = 1;
     intr = 1;
     st = 1;
