@@ -4,6 +4,6 @@
 	var position = choose(0, 1, 2, 4, 5, 6);
 	
 	if(emmiterStage4Timer mod 40 == 0) {	
-		createElement(position, 6, choose(sprSandwich, sprBurger, sprPizza));
+		createElement(position, 6, choose(sprSandwich, sprClock, sprClock, sprPizza));
 	}
   }

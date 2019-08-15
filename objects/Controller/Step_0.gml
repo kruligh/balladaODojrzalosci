@@ -63,7 +63,7 @@ if(global.bujanie) {
 			//dev
 			
 			global.showLirycs = false;
-			global.stage = 4;
+			//global.stage = 4;
 			break;
 		case 10:
 		//case 20:
@@ -91,6 +91,9 @@ if(global.bujanie) {
             var chosenEffect = 1;
             initEffect(chosenEffect, 300, chosenShader);
 			break;
+		case 36:
+			global.stage = 3;
+			break;
 		case 38:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "WSTEP");
@@ -100,7 +103,7 @@ if(global.bujanie) {
 			global.stage = 3;
 			
 			break;
-		case 48:
+		case 45:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "AKCJA");
 			global.stage = 4;
@@ -110,7 +113,7 @@ if(global.bujanie) {
             initEffect(chosenEffect, 9 * 60, chosenShader);
 			
 			break;
-		case 57:
+		case 55:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "HAHA");
 			ds_list_add(global.messages, "KAWAL");
