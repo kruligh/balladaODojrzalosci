@@ -1,5 +1,5 @@
     emmiterTimer += 1;
-	var position = choose(0, 1, 2, 3, 4, 5, 6);
+	var position = choose(0, 1, 2, 4, 5, 6);
 
 
 	if(emmiterTimer < 5) {
@@ -7,7 +7,7 @@
 	}
 	
 	if(emmiterTimer > 120 and emmiterTimer mod 60 == 0) {
-		createDrunkard(position, 8, 10);
+		createElement(position, 8, sprDrunkard);
 	}
 
 

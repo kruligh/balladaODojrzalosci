@@ -51,7 +51,8 @@ if(global.bujanie) {
             ticker = 0;   
         }
     }
-        
+            
+	huj = "dupa";
     switch (global.gameTime) {
         case 0:
 			global.stage = 0;
@@ -61,14 +62,16 @@ if(global.bujanie) {
 		case 1:
 			//dev
 			
-			//global.showLirycs = false;
-			//global.stage = 1;
+			global.showLirycs = false;
+			global.stage = 2;
 			break;
-		case 10:
-            global.stage = 1;
-			global.bujanie = true;
+		//case 10:
+		case 20:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "INTRO");
+            global.stage = 1;
+			global.bujanie = true;
+
             break;
 		case 21:
 			global.isTimeRevert = true;
@@ -81,10 +84,10 @@ if(global.bujanie) {
 		case 60:
 			
             if (isGandalf = false) {
-                instance_create(0, 0, Gandalf);
-                bossController = true;
+       //         instance_create(0, 0, Gandalf);
+         //       bossController = true;
             }
-            isGandalf = true;
+            //isGandalf = true;
 			
             break;
     }

@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0bef6cf1-c87b-4a18-80a1-91fcd6fd7f4a",
+            "Value": {
+                "id": "bc2ae9ee-0e20-4404-88a7-2863785f4c01",
+                "resourcePath": "sprites\\sprMoney\\sprMoney.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c882b8a-ef5c-4b1a-a94b-12f5c6ccac44",
             "Value": {
                 "id": "6240fddd-5eda-4bbb-b7f6-58fe8b3a0411",

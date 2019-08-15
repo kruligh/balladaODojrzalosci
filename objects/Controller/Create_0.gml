@@ -6,8 +6,7 @@
     global.ydisplay = 540;
 
     global.timer = 0;
-    
-	huj = "dupa";
+
 	
 	window_set_fullscreen(true);
     
@@ -150,7 +149,8 @@ ds_map_add(global.lyrics, 38, "");
 
 
 ///Messages
-
+global.messages = ds_list_create();
+			ds_list_add(global.messages, "");
     randomize();
 
 	bunnyTimer = 0;
