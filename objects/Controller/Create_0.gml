@@ -128,6 +128,24 @@
 	ds_map_add(global.lyrics, 20, "");
 	ds_map_add(global.lyrics, 25, "?? ?? ??");
 	ds_map_add(global.lyrics, 26, "");
+
+
+	ds_map_add(global.lyrics, 65, "X D");
+	ds_map_add(global.lyrics, 66, "");
+	ds_map_add(global.lyrics, 67, "X D");
+	ds_map_add(global.lyrics, 68, "");
+	
+
+	
+		ds_map_add(global.lyrics, 155, "WPOLDO CZECIEJ KURNA");
+		ds_map_add(global.lyrics, 158, "");
+		ds_map_add(global.lyrics, 159, "!! PRODUKCJA BICIKU - DESP !!");
+		ds_map_add(global.lyrics, 164, "!! GRA - ALEK ALKAPIVO !!");
+		ds_map_add(global.lyrics, 169, "!! NAJBA MJUSIK !!");
+		ds_map_add(global.lyrics, 174, "!! SUBSKRYBCJA KURDE !!");
+		ds_map_add(global.lyrics, 179, "dzieki");
+		//ds_map_add(global.lyrics, 190, "");
+
 /*	
 ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne");
 ds_map_add(global.lyrics, 11, "podrywalem raz dziewczyne i mnie pyta ile");
