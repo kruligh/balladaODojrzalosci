@@ -12,7 +12,7 @@
     reached = true;
     targetPoint = self.x;
     changeSpd = 2;
-        
+    good = false;
     message = randomMessage();
     sprite_index = randomShroomSprite(sprite_index);
 

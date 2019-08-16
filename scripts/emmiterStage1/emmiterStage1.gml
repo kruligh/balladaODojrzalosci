@@ -7,7 +7,7 @@
 	}
 	
 	if(emmiterTimer > 120 and emmiterTimer mod 61 == 0) {
-		createElement(position, 8, sprDrunkard);
+		createElement(position, 8, sprDrunkard, false);
 	}
 
 

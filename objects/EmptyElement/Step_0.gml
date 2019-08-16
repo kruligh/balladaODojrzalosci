@@ -30,5 +30,5 @@
     }
 
 ///Perform crash
-    playerCrashDetect();
+   // playerCrashDetect();
 

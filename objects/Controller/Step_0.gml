@@ -63,7 +63,7 @@ if(global.bujanie) {
 			//dev
 			
 			//global.showLirycs = false;
-			//global.stage = 7;
+			global.stage = 7;
 			break;
 		case 10:
 		//case 20:

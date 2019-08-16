@@ -5,20 +5,27 @@
 
 
 	if(emmiterStage2Timer < 60) {
-		createElement(0, 10, sprMoney);
-		createElement(1, 10, sprMoney);
-		createElement(2, 10, sprMoney);
-		createElement(4, 10, sprMoney);
-		createElement(5, 10, sprMoney);
-		createElement(6, 10, sprMoney);
+		createElement(0, 10, sprMoney, true);
+		createElement(1, 10, sprMoney, true);
+		createElement(2, 10, sprMoney, true);
+		createElement(4, 10, sprMoney, true);
+		createElement(5, 10, sprMoney, true);
+		createElement(6, 10, sprMoney, true);
+	} else if(emmiterStage2Timer > 120 and emmiterStage2Timer < 180){
+		createElement(0, 10, sprMoney, true);
+		createElement(1, 10, sprMoney, true);
+		createElement(2, 10, sprMoney, true);
+		createElement(4, 10, sprMoney, true);
+		createElement(5, 10, sprMoney, true);
+		createElement(6, 10, sprMoney, true);
 	}
 	
-	if(emmiterStage2Timer > 100 and emmiterStage2Timer mod 30 == 0) {
-		createElement(position, 8, sprMoney);
+	if(emmiterStage2Timer > 140 and emmiterStage2Timer mod 30 == 0) {
+		createElement(position, 8, sprMoney, true);
 	}
 	
 	if(emmiterStage2Timer > 300 and emmiterStage2Timer mod 60 == 0) {
-		createElement(position, 8, sprVirus);
+		createElement(position, 8, sprVirus, false);
 	}
 
   }
