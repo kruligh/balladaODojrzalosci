@@ -122,6 +122,13 @@
 	ds_map_add(global.lyrics, 8, "sluchaj tego mlody");
 	ds_map_add(global.lyrics, 9, "sluchaj tego mloda");
 	
+	ds_map_add(global.lyrics, 10, "");
+	
+	ds_map_add(global.lyrics, 19, "?? ?? ??");
+	ds_map_add(global.lyrics, 20, "");
+	ds_map_add(global.lyrics, 25, "?? ?? ??");
+	ds_map_add(global.lyrics, 26, "");
+/*	
 ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne");
 ds_map_add(global.lyrics, 11, "podrywalem raz dziewczyne i mnie pyta ile");
 ds_map_add(global.lyrics, 12, "ile dojrzałości ileee");
@@ -148,7 +155,7 @@ ds_map_add(global.lyrics, 32, "wiesz ja rozmawiam z kompem");
 ds_map_add(global.lyrics, 34, "i choc lubię patrzec tez na stroje skape");
 ds_map_add(global.lyrics, 36, "jestem gotowy na związek");
 ds_map_add(global.lyrics, 38, ""); 
-
+*/
 
 ///Messages
 global.messages = ds_list_create();

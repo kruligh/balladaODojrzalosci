@@ -13,7 +13,7 @@
 		createElement(6, 10, sprMoney);
 	}
 	
-	if(emmiterStage2Timer > 100 and emmiterStage2Timer mod 60 == 0) {
+	if(emmiterStage2Timer > 100 and emmiterStage2Timer mod 30 == 0) {
 		createElement(position, 8, sprMoney);
 	}
 	

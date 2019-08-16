@@ -11,7 +11,7 @@
     draw_sprite_part_ext(barLeft, 0, 0, 0, sprite_get_width(barLeft), hapinessLength, 0, 100, 1, 1, image_blend, barAlpha);
     draw_sprite_part_ext(barRight, 0, 0, 0, sprite_get_width(barLeft), lifeLength, 0, 100, 1, 1, image_blend, barAlpha);
 
-    
+  */  
     
 
 
