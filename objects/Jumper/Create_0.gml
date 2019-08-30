@@ -4,7 +4,7 @@
     spdPrev = spd;
     spdTemp = 0;
     vspd = 5;
-    constA = 1 / 520;
+    constA = 1 / (global.ydisplay * 0.9696);
     t = 0;
     timer = 0;
     

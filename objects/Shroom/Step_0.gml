@@ -39,8 +39,8 @@
             t = 0;
             reached = false;
             speed = 0;
-            var realMargin = 480 - round(spd / Grid.a) - Grid.l_up + Grid.margin;
-            var realLine = 960 - realMargin * 2;
+            var realMargin = (global.xdisplay / 2.0) - round(spd / Grid.a) - Grid.l_up + Grid.margin;
+            var realLine = global.xdisplay - realMargin * 2;
             var realDistance = realLine / 7;
             var realOffset = realDistance * 0.5;
             targetPoint = realMargin + realOffset + realDistance * (position);

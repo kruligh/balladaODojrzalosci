@@ -1,9 +1,9 @@
 
     for (i = 0; i < starsAmount; i++) {
-        if ((starY[i] > 800) || (starX[i] < -300) || (starX[i] > 1260)) {
-            starX[i] = 480 + choose(1, -1) * random(75);
+        if ((starY[i] > (global.ydisplay * 1.481)) || (starX[i] < -300) || (starX[i] > (global.xdisplay * 1.3125))) {
+            starX[i] = (global.xdisplay / 2.0) + choose(1, -1) * random(75);
             starY[i] = -100 + random(50);
-            if (starX[i] < 480) {
+            if (starX[i] < (global.xdisplay / 2.0)) {
                 starSpdX[i] = choose(-0.01, -0.05, -0.1, -0.25, -0.25, -0.3, -0.4, -0.5);
             } else {
                 starSpdX[i] = choose(0.01, 0.05, 0.1, 0.25, 0.25, 0.3, 0.4, 0.5);

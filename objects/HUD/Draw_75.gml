@@ -13,8 +13,8 @@
             fa_middle,
             fa_bottom,
             pixelFontBig,
-            480,
-            270,
+            (global.xdisplay / 2.0),
+            (global.ydisplay / 2.0),
             random(3),
             random(3));
 	}

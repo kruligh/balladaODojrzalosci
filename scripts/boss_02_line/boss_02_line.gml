@@ -12,7 +12,7 @@
 	var yEyeMargin = 37; // magic number, distance from sprite origin to eye.
 	var linesSize = 5; // magic number, number of LAZER RAYS per eye!!!
 	var linesDistance = 40; // magic number
-	var screenHeight = 540 // wtf, magic number;
+	var screenHeight = global.ydisplay
 	for (var index = 0; index < linesSize; index++) {
 		y1 = screenHeight + index * linesDistance + (20 * cos(a)); 
 		draw_set_alpha(choose(1.0, 0.9, 0.9, 0.7));	
@@ -45,7 +45,7 @@
 	var yEyeMargin = 37; // magic number, distance from sprite origin to eye.
 	var linesSize = 5; // magic number, number of LAZER RAYS per eye!!!
 	var linesDistance = 40; // magic number
-	var screenHeight = 540 // wtf, magic number;
+	var screenHeight = global.ydisplay
 	for (var index = 0; index < linesSize; index++) {
 		y2 = screenHeight + index * linesDistance + (20 * cos(a)); 
 		draw_set_alpha(choose(1.0, 0.9, 0.9, 0.7));	

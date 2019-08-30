@@ -21,7 +21,9 @@
     //Left
     draw_set_halign(fa_left);
     draw_set_valign(fa_bottom);
-    draw_text_transformed_colour(48, 500, 
+    draw_text_transformed_colour(
+		global.xdisplay * 0.05, 
+		global.ydisplay * 0.9259,
 		string_hash_to_newline("STAGE " + string(global.stage)), 
 		1, 1, 0, c_red, c_yellow, c_red, c_yellow, 1.0);
     
@@ -38,7 +40,7 @@
                             fa_middle,
                             fa_bottom,
                             pixelFontBig,
-                            480,
+                            (global.xdisplay / 2.0),
                             500,
                             random(3),
                             random(3));
@@ -50,6 +52,9 @@
     //Right
     draw_set_halign(fa_right);
     draw_set_valign(fa_bottom);
-    draw_text_transformed_colour(960 - 48, 500, string_hash_to_newline("TIME " + string(global.gameTime)), 1, 1, 0, c_red, c_yellow, c_red, c_yellow, 1.0);
+    draw_text_transformed_colour(
+		global.xdisplay - (global.xdisplay * 0.05), 
+		global.ydisplay * 0.9259, 
+		string_hash_to_newline("TIME " + string(global.gameTime)), 1, 1, 0, c_red, c_yellow, c_red, c_yellow, 1.0);
 
 

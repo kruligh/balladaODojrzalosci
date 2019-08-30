@@ -7,9 +7,9 @@
     starSprite = sprStar;
     starsAmount = 50;
     for (i = 0; i < starsAmount; i++) {
-        starX[i] = 480 + choose(1, -1) * random(75);
+        starX[i] = (global.xdisplay / 2.0) + choose(1, -1) * random(75);
         starY[i] = -100 + random(50);
-        if (starX[i] < 480) {
+        if (starX[i] < (global.xdisplay / 2.0)) {
             starSpdX[i] = choose(-0.01, -0.05, -0.1, -0.25, -0.3, -0.4, -0.5, -0.75, -1);
         } else {
             starSpdX[i] = choose(0.01, 0.05, 0.1, 0.25, 0.3, 0.4, 0.5, 0.75, 1);

@@ -19,15 +19,16 @@
         instance_create(0, 0, Controller);
     }
     
+	
     //Moves
     position = 3;
     positionReal = position;
     positionMin = 0;
-    positionMax = 6;
+    positionMax = global.numberOfLanes;
     positionMargin = 130;
-    positionDistance = (960 - positionMargin * 2) / 7;
+    positionDistance = (global.xdisplay - positionMargin * 2) / 7;
     positionOffset = positionDistance / 2;
-    positionDown = y_view - 140;
+    positionDown = global.ydisplay * 0.82625;
     for(i = 0; i < 7; i++) {
         point[i] = positionMargin + i * positionDistance + positionOffset;
     }
@@ -57,8 +58,6 @@
     }
     bpmPreviousAction = BpmAction.MOVE_LEFT;
 
-
-
 ///@description Initialize
 
 	/**
@@ -67,7 +66,7 @@
 	 * zrob tak, zeby statek sie "bujał"
 	 */
 	 
-thick = 0	 
+	thick = 0	 
 	 
 
 

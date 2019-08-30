@@ -18,7 +18,7 @@ if (intr = 1)
             boss_02_line();
         
         
-        if (st > 520)
+        if (st > (global.ydisplay * 0.9696))
         {
             st = 0;
             intr = 3;

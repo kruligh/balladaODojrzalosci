@@ -1,17 +1,26 @@
 /// @description Init
-    randomize();
 
-    //setResolution();
-    global.xdisplay = 960;
-    global.ydisplay = 540;
+	view_enabled = true;
+	view_set_visible(0, true);
+	view_set_wport(0, global.xdisplay);
+	view_set_hport(0, global.ydisplay);
+	
+	global.camera = camera_create();
+	global.cameraProjectionMatrix = matrix_build_projection_perspective_fov(45, 
+		view_get_wport(0) / view_get_hport(0), 
+		1, 
+		32000);
+		
+	camera_set_proj_mat(global.camera, global.cameraProjectionMatrix);
+	view_set_camera(0, global.camera);
+	camera_set_update_script(global.camera, cameraUpdate);
+	camera_set_view_size(global.camera, -global.xdisplay, global.ydisplay);
+	cameraChange();
 
     global.timer = 0;
-
 	
-	window_set_fullscreen(true);
-    
     //set grid points 
-    var marginUp = 435;
+    var marginUp = (global.xdisplay / 2.0) * 0.90625;
     var distanceUp = 90 / 7;
     var offsetUp = distanceUp / 2;
     for (i = 0; i < 7; i++) {
@@ -19,13 +28,13 @@
     }
     
     var marginDown = 30;
-    var distanceDown = 900 / 7;
+    var distanceDown = (global.xdisplay * 0.9375) / 7;
     var offsetDown = distanceDown / 2;
     for (i = 0; i < 7; i++) {
         pointDown[i] = (i * distanceDown) + marginDown + offsetDown;
     }
     
-    var pointSubtraction = 520;
+    var pointSubtraction = (global.ydisplay * 0.9696);
     var pointUpY = 10;
     for (i = 0; i < 7; i++) {
         if (i != 3) {
@@ -41,8 +50,6 @@
     viewAngleStep = 10;
     viewAnglePlayer = 0;
     viewAngleShader = 0;
-    
-    show_debug_overlay(true);
     
     isGandalf = false;
     
@@ -114,8 +121,8 @@
     global.lyrics = ds_map_create();
     
 	ds_map_add(global.lyrics, 1, "dominik");
-		ds_map_add(global.lyrics, 2, "dominik krulig");
-			ds_map_add(global.lyrics, 3, "dominik krulig bugz");
+	ds_map_add(global.lyrics, 2, "dominik krulig");
+	ds_map_add(global.lyrics, 3, "dominik krulig bugz");
 	ds_map_add(global.lyrics, 4, "ballada o dojrzalosci");
 	ds_map_add(global.lyrics, 6, "");
 	ds_map_add(global.lyrics, 7, "sluchaj tego");
@@ -138,47 +145,47 @@
 	ds_map_add(global.lyrics, 68, "");	
 
 	
-		ds_map_add(global.lyrics, 159, "WPOLDO CZECIEJ KURNA");
-		ds_map_add(global.lyrics, 162, "");
-		ds_map_add(global.lyrics, 166, "!! PRODUKCJA BICIKU - DESP !!");
-		ds_map_add(global.lyrics, 171, "!! GRA - ALEK ALKAPIVO !!");
-		ds_map_add(global.lyrics, 176, "!! NAJBA MJUSIK !!");
-		ds_map_add(global.lyrics, 181, "!! SUBSKRYBCJA KURDE !!");
-		ds_map_add(global.lyrics, 186, "dzieki");
-		//ds_map_add(global.lyrics, 190, "");
+	ds_map_add(global.lyrics, 159, "WPOLDO CZECIEJ KURNA");
+	ds_map_add(global.lyrics, 162, "");
+	ds_map_add(global.lyrics, 166, "!! PRODUKCJA BICIKU - DESP !!");
+	ds_map_add(global.lyrics, 171, "!! GRA - ALEK ALKAPIVO !!");
+	ds_map_add(global.lyrics, 176, "!! NAJBA MJUSIK !!");
+	ds_map_add(global.lyrics, 181, "!! SUBSKRYBCJA KURDE !!");
+	ds_map_add(global.lyrics, 186, "dzieki");
+	//ds_map_add(global.lyrics, 190, "");
 
 /*	
-ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne");
-ds_map_add(global.lyrics, 11, "podrywalem raz dziewczyne i mnie pyta ile");
-ds_map_add(global.lyrics, 12, "ile dojrzałości ileee");
-ds_map_add(global.lyrics, 13, "?? ile ??");
-ds_map_add(global.lyrics, 14, "sobie na 10 dasz synek");
-ds_map_add(global.lyrics, 15, "?");
-ds_map_add(global.lyrics, 16, "co bym zrobil zeby dac punkt wiecej ??");
-ds_map_add(global.lyrics, 18, "?? po sikaniu umyl rece ?? ");
-ds_map_add(global.lyrics, 19, "?? czy przed tez ??");
-// intro2
-ds_map_add(global.lyrics, 20, "podrywalem raz dziewczyne, i mnie pyta");
-ds_map_add(global.lyrics, 22, "ile dojrzałości ileee");
-ds_map_add(global.lyrics, 23, "? ile ile ile ?");
-ds_map_add(global.lyrics, 24, "sobie na 10 dasz synek");
-ds_map_add(global.lyrics, 25, "?? ?? ??");
+	ds_map_add(global.lyrics, 10, "podrywalem raz dziewczyne");
+	ds_map_add(global.lyrics, 11, "podrywalem raz dziewczyne i mnie pyta ile");
+	ds_map_add(global.lyrics, 12, "ile dojrzałości ileee");
+	ds_map_add(global.lyrics, 13, "?? ile ??");
+	ds_map_add(global.lyrics, 14, "sobie na 10 dasz synek");
+	ds_map_add(global.lyrics, 15, "?");
+	ds_map_add(global.lyrics, 16, "co bym zrobil zeby dac punkt wiecej ??");
+	ds_map_add(global.lyrics, 18, "?? po sikaniu umyl rece ?? ");
+	ds_map_add(global.lyrics, 19, "?? czy przed tez ??");
+	// intro2
+	ds_map_add(global.lyrics, 20, "podrywalem raz dziewczyne, i mnie pyta");
+	ds_map_add(global.lyrics, 22, "ile dojrzałości ileee");
+	ds_map_add(global.lyrics, 23, "? ile ile ile ?");
+	ds_map_add(global.lyrics, 24, "sobie na 10 dasz synek");
+	ds_map_add(global.lyrics, 25, "?? ?? ??");
 
 // swag
 
-ds_map_add(global.lyrics, 26, "i jej mówie mała osiem");
-ds_map_add(global.lyrics, 28, "bo jestem gosciem co");
-ds_map_add(global.lyrics, 30, "za robote ma forse");
-ds_map_add(global.lyrics, 31, "i to sa te pieniadze dobre");
-ds_map_add(global.lyrics, 32, "wiesz ja rozmawiam z kompem");
-ds_map_add(global.lyrics, 34, "i choc lubię patrzec tez na stroje skape");
-ds_map_add(global.lyrics, 36, "jestem gotowy na związek");
-ds_map_add(global.lyrics, 38, ""); 
-*/
+	ds_map_add(global.lyrics, 26, "i jej mówie mała osiem");
+	ds_map_add(global.lyrics, 28, "bo jestem gosciem co");
+	ds_map_add(global.lyrics, 30, "za robote ma forse");
+	ds_map_add(global.lyrics, 31, "i to sa te pieniadze dobre");
+	ds_map_add(global.lyrics, 32, "wiesz ja rozmawiam z kompem");
+	ds_map_add(global.lyrics, 34, "i choc lubię patrzec tez na stroje skape");
+	ds_map_add(global.lyrics, 36, "jestem gotowy na związek");
+	ds_map_add(global.lyrics, 38, ""); 
+	*/
 
 ///Messages
-global.messages = ds_list_create();
-			ds_list_add(global.messages, "");
+	global.messages = ds_list_create();
+	ds_list_add(global.messages, "");
     randomize();
 
 	bunnyTimer = 0;
@@ -187,3 +194,4 @@ global.messages = ds_list_create();
 	global.isTimeRevert = false;
 	global.bujanie = false;
 	global.showLirycs = true;
+	

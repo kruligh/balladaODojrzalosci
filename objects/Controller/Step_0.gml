@@ -20,26 +20,20 @@
             vrAngleY += sign(accAngleY);
         }
     }
-	
-	
+  // bujanie
+	if(global.bujanie) {
+	    viewAngleAmbient += 0.005;
+	    if (viewAngleAmbient > pi * 2) {
+	        viewAngleAmbient = 0;
+	    }
     
-    //View Angle All
-    __view_set( e__VW.Angle, 0, viewAnglePlayer - vrAngleY + viewAngleShader );
-     
-// bujanie
-if(global.bujanie) {
-    viewAngleAmbient += 0.005;
-    if (viewAngleAmbient > pi * 2) {
-        viewAngleAmbient = 0;
-    }
-    
-    viewAngleFactorTimer += 1;
-    if (viewAngleFactorTimer > 5 * room_speed) {
-        viewAngleFactor = choose(1, 1.1, 1.3, 1.4, 1.7, 2.1, 2.8, 2.9, 3.7, 4.6);
-        viewAngleFactorTimer  = 0;
-    }
-    __view_set(e__VW.Angle, 0, __view_get( e__VW.Angle, 0 ) + (sin(viewAngleAmbient) * 10) );//viewAngleFactor;
-}
+	    viewAngleFactorTimer += 1;
+	    if (viewAngleFactorTimer > 5 * room_speed) {
+	        viewAngleFactor = choose(1, 1.1, 1.3, 1.4, 1.7, 2.1, 2.8, 2.9, 3.7, 4.6);
+	        viewAngleFactorTimer  = 0;
+	    }
+	    camera_set_view_angle(global.camera, sin(viewAngleAmbient) * 10);
+	}
     
 
 

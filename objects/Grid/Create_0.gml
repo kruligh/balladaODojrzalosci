@@ -12,15 +12,14 @@
         instance_create(0, 0, Controller);
     }
 
-
     //Grid parameters
-    distd = 128;
-    distu = distd/10;
-    line_down = 900;
+    line_down = (global.xdisplay * 0.9375);
     line_up = line_down/10;
     l_down = line_down/2
-    l_up = line_up/2
-    margin = 10;
+    l_up = line_up / 2.0;
+	distd = line_down / global.numberOfLanes;
+    distu = distd/10;
+    margin = round(global.xdisplay * 0.01);
     xx = l_down - l_up;
     yy = y_view-2*margin
     a = (yy/xx);
