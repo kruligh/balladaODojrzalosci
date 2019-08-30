@@ -53,7 +53,8 @@ if(global.bujanie) {
     }
             
 	huj = "dupa";
-    switch (global.gameTime) {
+	delayedTime = global.gameTime - 1;
+    switch (delayedTime) {
         case 0:
 			global.stage = 0;
             bossInit = false;
@@ -73,7 +74,7 @@ if(global.bujanie) {
 			global.bujanie = true;
 
             break;
-		case 20:
+		case 19:
 			if(global.timer mod 30 == 0) {
 				global.isTimeRevert = true;
 			}
@@ -84,7 +85,7 @@ if(global.bujanie) {
             var chosenEffect = 2;
             initEffect(chosenEffect, 100, chosenShader);
 			break;
-    	case 26:
+    	case 25:
 			resetShader();
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "SWAG");
@@ -92,7 +93,7 @@ if(global.bujanie) {
 			global.isTimeRevert = false;
 			
 			break;
-		case 36:
+		case 34:
 			global.stage = 3;
 			break;
 		case 38:

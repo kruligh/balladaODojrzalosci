@@ -162,7 +162,7 @@
             "Key": "158f2364-dc38-4500-85d3-03e3a874b46b",
             "Value": {
                 "id": "fb502f98-d4a2-429d-a052-5fee167b7518",
-                "resourcePath": "sprites\\sprElement\\sprElement.yy",
+                "resourcePath": "sprites\\sptTinder\\sptTinder.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1444,6 +1444,14 @@
                 "id": "7869f656-1156-461a-bd98-5f1846fb9351",
                 "resourcePath": "scripts\\emmiterStage10\\emmiterStage10.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f2bd0b33-a9fb-46f3-af89-2a3e66979497",
+            "Value": {
+                "id": "6f05ceac-3063-4972-8ec0-e9baf23aa9c0",
+                "resourcePath": "sounds\\ballada_o_dojrzalosci_master\\ballada_o_dojrzalosci_master.yy",
+                "resourceType": "GMSound"
             }
         },
         {
