@@ -40,6 +40,7 @@
     keyLeft = vk_left;
     keyRight = vk_right;
     keyShoot = vk_up;
+	keyDown = vk_down;
     global.gamepad = 1;
     
     shootTimer = 0;

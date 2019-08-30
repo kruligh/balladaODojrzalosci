@@ -85,4 +85,9 @@
             shootTimer = 0;
         }
     }
+	
+	//Reset shader
+	if (keyboard_check_pressed(keyDown)) {
+        resetShader();
+    }
 
