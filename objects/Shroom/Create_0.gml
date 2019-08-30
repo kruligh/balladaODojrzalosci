@@ -16,3 +16,4 @@
     message = randomMessage();
     sprite_index = randomShroomSprite(sprite_index);
 
+event_inherited();

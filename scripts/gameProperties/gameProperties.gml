@@ -4,12 +4,12 @@
 	gml_pragma("global", "gameProperties()");
 	
 	#region Properties
-	global.xdisplay = 800;
-	global.ydisplay = 600;
+	global.xdisplay = 960;
+	global.ydisplay = 540;
 	global.isShaderEffectModifierEnabled = false;
-	global.isDebugModeEnabled = true;
-	global.isFullscreen = false;
-	global.numberOfLanes = 6;
+	global.isDebugModeEnabled = false;
+	global.isFullscreen = true;
+	global.numberOfLanes = 7;
 	#endregion
 	
 	randomize(); 

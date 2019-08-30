@@ -1,6 +1,6 @@
 
     //Set image scale;
-    image_xscale = 0.003 * spd + 0.22;
+    image_xscale = 0.003 * (spd > 0 ? spd : 0.0) + 0.22;
     image_yscale = image_xscale;
 
     if (reached == true) {

@@ -14,3 +14,5 @@
     changeSpd = 2;
     good = false;
     message = randomMessage();
+
+	event_inherited();

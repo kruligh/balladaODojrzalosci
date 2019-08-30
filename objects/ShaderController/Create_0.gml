@@ -36,7 +36,17 @@
     effectT = 0;   
     backgroundCounter = 0;
 	backgroundColor = make_color_rgb(0, 0, 0);
+	
+	backgroundEXTRAAngle = 0;
+    red = 120;
+    green = 30;
+    blue = 200;
     
+
+    redDirection = 1;
+    greenDirection = 1;
+    blueDirection = -1;
+
 ///VR
 	isVR = os_type == os_android;
 	

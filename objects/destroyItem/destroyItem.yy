@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "destroyItem",
     "eventList": [
-        
+        {
+            "id": "c36dc7c5-b3fc-4d09-8a70-ab5b889da8d9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "5230d069-c02c-45d9-bd9d-7f58be77945d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -1,7 +1,7 @@
-if (intr = 1)
+if (intr == 1)
         draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
     
-    if (intr = 2)
+    if (intr == 2)
     {
         st += 1;
         if (st < 180)
@@ -14,8 +14,7 @@ if (intr = 1)
             blend = choose(c_red,c_blue,c_yellow,c_fuchsia,c_aqua,c_green,c_black,c_white);
             draw_sprite_ext(spr_boss_02_1,image_index,x,y,image_xscale,image_yscale,image_angle,blend,image_alpha);
         }
-        if (st > 300) && (leye = 0) && (reye = 0)
-            boss_02_line();
+        
         
         
         if (st > (global.ydisplay * 0.9696))
@@ -40,4 +39,10 @@ if (intr = 1)
 		draw_sprite_ext(spr_boss_02_2,image_index,x,
 			y + abs(sin(mounthThetha) * mounthRange), 
 			image_xscale,image_yscale,image_angle,c_white,image_alpha);	
+	}
+	
+	if (intr == 2) {
+		if (st > 300) && (leye = 0) && (reye = 0) {
+            boss_02_line();
+		}	
 	}

@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "a2f7cfd5-ed8c-4530-b259-490ebf94eeb9",
+            "Value": {
+                "id": "bb0d44ee-5d94-437c-857a-8ada971e6df3",
+                "resourcePath": "sprites\\sprCzarnaDupa\\sprCzarnaDupa.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a47cbbff-8924-4721-836c-d917cd4029c6",
             "Value": {
                 "id": "5baeaa22-9193-407a-b313-2578ca3b7621",
@@ -1108,6 +1116,14 @@
                 "id": "870d76cc-1287-47fb-a6e6-594d3e952fc5",
                 "resourcePath": "objects\\Bullet\\Bullet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b6abf9c3-89ee-4f92-909a-990be11f41ae",
+            "Value": {
+                "id": "8a0c2d20-3679-4a76-a40c-512619b0318a",
+                "resourcePath": "sprites\\sprTapetaZOSX\\sprTapetaZOSX.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -7,9 +7,9 @@
 	#region Dispatch background effect
     if (backgroundCounter == 0) {
         __background_set_colour(backgroundColor);
-        __background_set_showcolour(true);
+        //__background_set_showcolour(true);
     } else {
-        __background_set_showcolour(false);
+        //__background_set_showcolour(false);
     }
 	#endregion
     

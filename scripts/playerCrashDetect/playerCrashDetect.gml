@@ -60,11 +60,11 @@
            }
 		   		   
 			if(self.good == true) {
-				instance_create(self.x - 50, self.y-100, GoodExplosion);
+				instance_create(id.x, id.y, GoodExplosion);
             }
 			else {
-				instance_create(self.x - 50, self.y-100, Explosion);
+				instance_create(id.x, id.y, Explosion);
             }
-            instance_destroy(self);
+            instance_destroy(id);
         }
     }

@@ -52,11 +52,13 @@
     }
     
     var tempOffset = 10;
-    if (self.x - tempOffset < point[position]) && (point[position] < self.x + tempOffset) {
-        reached = true;
-    } else {
-        reached = false;
-    }
+	position = clamp(position, 0, 6);
+	if (self.x - tempOffset < point[position]) && (point[position] < self.x + tempOffset) {
+	    reached = true;
+	} else {
+	    reached = false;
+	}	
+
     
     if (reached == false) {
         move_towards_point(point[position], positionDown, spd);
