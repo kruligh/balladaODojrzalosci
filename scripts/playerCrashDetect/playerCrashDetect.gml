@@ -1,7 +1,7 @@
 
    if (self.y > 366) && (self.y < 430) {
         if (self.position == Player.positionReal) {
-            if (ShaderController.shader != -1) {
+            /*if (ShaderController.shader != -1) {
                 resetShader();
                 show_debug_message("SET SHADER ANGLE");
                 Controller.viewAngleShader = choose(0, 0, 10, 20, 30, 35, 40, 45, 50, 90, 120, 150, 180) * choose(1, -1);
@@ -16,6 +16,9 @@
             initEffect(chosenEffect, 300, chosenShader);
             global.hapiness += 15;
            
+		   
+		   */
+		   
 			if(self.good == true) {
 				instance_create(self.x - 50, self.y-100, GoodExplosion);
             }

@@ -130,20 +130,21 @@
 	ds_map_add(global.lyrics, 26, "");
 
 
+	ds_map_add(global.lyrics, 63, "X D");
+	ds_map_add(global.lyrics, 64, "");
 	ds_map_add(global.lyrics, 65, "X D");
 	ds_map_add(global.lyrics, 66, "");
 	ds_map_add(global.lyrics, 67, "X D");
-	ds_map_add(global.lyrics, 68, "");
-	
+	ds_map_add(global.lyrics, 68, "");	
 
 	
-		ds_map_add(global.lyrics, 155, "WPOLDO CZECIEJ KURNA");
-		ds_map_add(global.lyrics, 158, "");
-		ds_map_add(global.lyrics, 159, "!! PRODUKCJA BICIKU - DESP !!");
-		ds_map_add(global.lyrics, 164, "!! GRA - ALEK ALKAPIVO !!");
-		ds_map_add(global.lyrics, 169, "!! NAJBA MJUSIK !!");
-		ds_map_add(global.lyrics, 174, "!! SUBSKRYBCJA KURDE !!");
-		ds_map_add(global.lyrics, 179, "dzieki");
+		ds_map_add(global.lyrics, 159, "WPOLDO CZECIEJ KURNA");
+		ds_map_add(global.lyrics, 162, "");
+		ds_map_add(global.lyrics, 165, "!! PRODUKCJA BICIKU - DESP !!");
+		ds_map_add(global.lyrics, 170, "!! GRA - ALEK ALKAPIVO !!");
+		ds_map_add(global.lyrics, 175, "!! NAJBA MJUSIK !!");
+		ds_map_add(global.lyrics, 180, "!! SUBSKRYBCJA KURDE !!");
+		ds_map_add(global.lyrics, 185, "dzieki");
 		//ds_map_add(global.lyrics, 190, "");
 
 /*	

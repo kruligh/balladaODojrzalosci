@@ -839,6 +839,14 @@
             }
         },
         {
+            "Key": "89b6beff-4327-46a9-ba92-d4ca3a9ecf99",
+            "Value": {
+                "id": "d29fbf94-2346-44fd-9047-7af6727b8588",
+                "resourcePath": "sprites\\sprKotlet\\sprKotlet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89e416f4-3522-41fc-b7af-c3b610e212f8",
             "Value": {
                 "id": "3d7c582b-ab2c-4bc2-801c-e002831ab470",

@@ -66,7 +66,7 @@ if(global.bujanie) {
 			//global.showLirycs = false;
 			//global.stage = 11;
 			break;
-		case 10:
+		case 9:
 		//case 20:
 			global.messages = ds_list_create();
 			ds_list_add(global.messages, "INTRO");
@@ -135,6 +135,14 @@ if(global.bujanie) {
 		case 58:
 			resetShader();
 			break;
+		case 65:
+						
+            isGandalf = true;
+			instance_create(0, 0, Gandalf);
+			global.destroyGandalf = false;
+			//    bossController = true;
+            break; 
+			
 		case 67:
 			global.bujanie = false;
 			break;	
@@ -143,13 +151,7 @@ if(global.bujanie) {
 			ds_list_add(global.messages, "POWAGA");
 
 			global.stage = 6;
-			
-            isGandalf = true;
-			instance_create(0, 0, Gandalf);
-			global.destroyGandalf = false;
-			//    bossController = true;
-                        
-			
+
 			break;	
 		case 78:
 			global.messages = ds_list_create();
@@ -167,7 +169,7 @@ if(global.bujanie) {
 		case 81:
 			global.destroyGandalf = true;
 			break;
-		case 87:
+		case 85:
 			global.messages = ds_list_create();
 
 			ds_list_add(global.messages, "DIETA");
@@ -189,37 +191,37 @@ if(global.bujanie) {
 			global.stage = 9;
 		
 			break;
-		case 100:
+		case 99:
 			global.stage = 10;
 			var chosenShader = shaders.shader_wave;
             var chosenEffect = 3;
             initEffect(chosenEffect, 9 * 60, chosenShader);
 			break;
-		case 109:
+		case 108:
 		resetShader();
 			var chosenShader = shaders.shock_shockwave;
             var chosenEffect = 3;
             initEffect(chosenEffect, 9 * 60, chosenShader);
 			break;
-		case 114:
+		case 113:
 		resetShader();
 			var chosenShader = shaders.shader_rgb;
             var chosenEffect = 1;
             initEffect(chosenEffect, 9 * 60, chosenShader);
 			break;
-		case 119:
+		case 118:
 		resetShader();
 			var chosenShader = shaders.shader_rgb;
             var chosenEffect = 2;
             initEffect(chosenEffect, 9 * 60, chosenShader);
 			break;
-		case 124:
+		case 123:
 		resetShader();
 			var chosenShader = shaders.shader_rgb;
             var chosenEffect = 3;
             initEffect(chosenEffect, 9 * 60, chosenShader);
 			break;
-		case 126:
+		case 125:
 			resetShader();
 			global.stage = 11;
 			global.messages = ds_list_create();

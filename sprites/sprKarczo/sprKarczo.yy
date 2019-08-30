@@ -8,8 +8,8 @@
     "VTile": false,
     "bbox_bottom": 92,
     "bbox_left": 19,
-    "bbox_right": 88,
-    "bbox_top": 9,
+    "bbox_right": 87,
+    "bbox_top": 11,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
@@ -50,7 +50,7 @@
             "blendMode": 0,
             "isLocked": false,
             "name": "default",
-            "opacity": 100,
+            "opacity": 82,
             "visible": true
         }
     ],
