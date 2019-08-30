@@ -140,11 +140,11 @@
 	
 		ds_map_add(global.lyrics, 159, "WPOLDO CZECIEJ KURNA");
 		ds_map_add(global.lyrics, 162, "");
-		ds_map_add(global.lyrics, 165, "!! PRODUKCJA BICIKU - DESP !!");
-		ds_map_add(global.lyrics, 170, "!! GRA - ALEK ALKAPIVO !!");
-		ds_map_add(global.lyrics, 175, "!! NAJBA MJUSIK !!");
-		ds_map_add(global.lyrics, 180, "!! SUBSKRYBCJA KURDE !!");
-		ds_map_add(global.lyrics, 185, "dzieki");
+		ds_map_add(global.lyrics, 166, "!! PRODUKCJA BICIKU - DESP !!");
+		ds_map_add(global.lyrics, 171, "!! GRA - ALEK ALKAPIVO !!");
+		ds_map_add(global.lyrics, 176, "!! NAJBA MJUSIK !!");
+		ds_map_add(global.lyrics, 181, "!! SUBSKRYBCJA KURDE !!");
+		ds_map_add(global.lyrics, 186, "dzieki");
 		//ds_map_add(global.lyrics, 190, "");
 
 /*	
