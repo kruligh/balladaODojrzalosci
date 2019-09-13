@@ -20,7 +20,7 @@
     posY = sprite_get_height(panelLeft) * 0.5 + 100;
     panelAlpha = 1.0;
     barAlpha = 1.0;
-    viewRotate = camera_get_view_angle(global.camera);
+    viewRotate = camera_get_view_angle(global.camera.camera);
     test = 0;
     barMax = sprite_get_height(barLeft);
     

@@ -5,6 +5,9 @@
 	view_set_wport(0, global.xdisplay);
 	view_set_hport(0, global.ydisplay);
 	
+	global.camera = 0;
+	global.camera = instance_create_layer(0, 0, layer, Camera);
+	/*
 	global.camera = camera_create();
 	global.cameraProjectionMatrix = matrix_build_projection_perspective_fov(45, 
 		view_get_wport(0) / view_get_hport(0), 
@@ -16,6 +19,7 @@
 	camera_set_update_script(global.camera, cameraUpdate);
 	camera_set_view_size(global.camera, -global.xdisplay, global.ydisplay);
 	cameraChange();
+	*/
 
     global.timer = 0;
 	
@@ -98,15 +102,11 @@
     
 
 ///Audio
-    audio_play_sound(ballada_o_dojrzalosci_master, 100, false);
+
+	if (global.isAudioPlayed) {
+		audio_play_sound(ostBugz, 100, true);
+	}
     
-    #region Html5
-	
-    if (!audio_is_playing(ballada_o_dojrzalosci_master)) {
-        audio_play_sound(ballada_o_dojrzalosci_master, 100, false);    
-    }
-	
-	#endregion
 
 ///VR
     vrAngleX = 0;

@@ -28,6 +28,7 @@
     }
     
     //Middle lines
+	var _margin = margin;
     if (intr[1] >= ((global.xdisplay / 2.0) * 0.09375))
     {
         if (intr[2] < global.ydisplay)
@@ -36,9 +37,9 @@
         {  
             draw_line(
 				i, 
-				intr[2] - margin,
+				intr[2] - _margin,
 				(x_view/2) - l_up + j,
-				margin);
+				_margin);
             j += distu;
         }
     }

@@ -1,11 +1,16 @@
-if (intr == 1)
+	
+	shader_set(shdTilt)
+	
+	image_alpha = 1;
+	
+	if (intr == 1)
         draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
     
     if (intr == 2)
     {
         st += 1;
         if (st < 180)
-            image_alpha = choose(0.4,0.5,0.6,0.7,0.8,0.9,1) + 0.25;
+            image_alpha = 1;//choose(0.4,0.5,0.6,0.7,0.8,0.9,1) + 0.25;
         else
             image_alpha = 1;
         draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
@@ -40,9 +45,12 @@ if (intr == 1)
 			y + abs(sin(mounthThetha) * mounthRange), 
 			image_xscale,image_yscale,image_angle,c_white,image_alpha);	
 	}
+		shader_reset();
+	
 	
 	if (intr == 2) {
 		if (st > 300) && (leye = 0) && (reye = 0) {
             boss_02_line();
 		}	
 	}
+	

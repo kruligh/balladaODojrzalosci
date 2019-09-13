@@ -3,6 +3,8 @@
     application_surface_draw_enable(false);
 	surface_resize(application_surface, global.xdisplay, global.ydisplay);
 	
+	shader_enable_corner_id(true);
+	
 	enum shaders {
         shader_rgb,
         shader_edge_detection,

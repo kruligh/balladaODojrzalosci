@@ -21,7 +21,8 @@
         }
     }
   // bujanie
-	if(global.bujanie) {
+  // [C] to jest funkcja krolika xD #bujanie
+	if(global.bujanie == true) {
 	    viewAngleAmbient += 0.005;
 	    if (viewAngleAmbient > pi * 2) {
 	        viewAngleAmbient = 0;
@@ -32,7 +33,7 @@
 	        viewAngleFactor = choose(1, 1.1, 1.3, 1.4, 1.7, 2.1, 2.8, 2.9, 3.7, 4.6);
 	        viewAngleFactorTimer  = 0;
 	    }
-	    camera_set_view_angle(global.camera, sin(viewAngleAmbient) * 10);
+	    //camera_set_view_angle(global.camera.camera, sin(viewAngleAmbient) * 10);
 	}
     
 

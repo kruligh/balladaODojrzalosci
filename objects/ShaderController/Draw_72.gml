@@ -8,9 +8,6 @@
 	
 	draw_clear_alpha(c_black, 1.0);
 	
-
-
-
     if (red >= 254) || (red <= 1) {
         redDirection = redDirection * -1;
     }
@@ -27,11 +24,11 @@
 	
 	var bFactor = 0.1;
 	backgroundEXTRAAngle += bFactor;
-	var backgroundAngle = (camera_get_view_angle(global.camera) * -5) + backgroundEXTRAAngle;
+	var backgroundAngle = (camera_get_view_angle(global.camera.camera) * -5) + backgroundEXTRAAngle;
 	
 	if (backgroundCounter == 0) {
 		draw_sprite_ext(
-			menuBackgroundSprite, 0,
+			menuBackgroundSprite, image_index,
 			cameraXTarget,
 			cameraYTarget,
 			pixelScale,
@@ -40,3 +37,4 @@
 			make_color_rgb(red, green, blue),
 			1.0);
 	}
+	
