@@ -92,21 +92,12 @@
     global.lifeFactor = 0.00;
 
 ///Player
-
     global.playerLevel = 1;
 
-    
-
 ///Audio
-    //audio_play_sound(ballada_o_dojrzalosci_master, 100, false);
-    
-    #region Html5
-	
-    if (!audio_is_playing(ballada_o_dojrzalosci_master)) {
-        //audio_play_sound(ballada_o_dojrzalosci_master, 100, false);    
-    }
-	
-	#endregion
+	if (global.isAudioPlayed) {
+		audio_play_sound(ballada_o_dojrzalosci_master, 100, false);
+	}
 
 ///VR
     vrAngleX = 0;

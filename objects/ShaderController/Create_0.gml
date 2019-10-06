@@ -50,6 +50,10 @@
     greenDirection = 1;
     blueDirection = -1;
 
+	currentSurfaceWidth = global.xdisplay;
+	currentSurfaceHeight = global.ydisplay;
+	targetSurfaceShrink = [ 1, 1 ];
 ///VR
 	isVR = os_type == os_android;
+	
 	

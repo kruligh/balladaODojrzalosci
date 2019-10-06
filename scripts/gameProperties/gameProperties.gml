@@ -10,6 +10,9 @@
 	global.isDebugModeEnabled = false;
 	global.isFullscreen = true;
 	global.numberOfLanes = 7;
+	global.vericalSurfaces = 9;
+	global.horizontalSurfaces = 9;
+	global.isAudioPlayed = true;
 	#endregion
 	
 	randomize(); 

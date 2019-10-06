@@ -1,5 +1,6 @@
 
-//    draw_self();
+
+
     if (position <= 3) {
         draw_set_color(c_red)
         var pointX1 = 0;
@@ -10,14 +11,14 @@
         var textMargin = 120;
         var text = argument0;
         drawShakeText(  argument0,
-                        choose(c_white, c_fuchsia, c_yellow),
+                        [ c_white, c_fuchsia, c_yellow, c_lime, c_green ],
                         fa_right,
                         fa_bottom,
                         pixelFont,
                         pointX2 - textMargin,
                         pointY2,
-                        random(3),
-                        random(3));
+                        0,
+						0);
     } else {
         draw_set_color(c_red)
         var pointX1 = global.xdisplay;
@@ -29,14 +30,14 @@
         var textMargin = 120;
         var text = argument0;
         drawShakeText(  argument0,
-                        choose(c_white, c_fuchsia, c_yellow),
+                        [ c_white, c_fuchsia, c_yellow, c_lime, c_green ],
                         fa_left,
                         fa_bottom,
                         pixelFont,
                         pointX2 + textMargin,
                         pointY2,
-                        random(3),
-                        random(3));
+                        0,
+                        0);
     }
     
 

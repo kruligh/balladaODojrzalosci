@@ -23,7 +23,7 @@
     xx = l_down - l_up;
     yy = y_view-2*margin
     a = (yy/xx);
-	gridWidth = 2;
+	gridWidth = 3;
     
     //Color
     color[0] = c_fuchsia;

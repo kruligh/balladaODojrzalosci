@@ -83,10 +83,10 @@
 	shader_set_uniform_f(shaderUpscaling5XBRAUniformBrightness, 0.0);
 	shader_set_uniform_f(shaderUpscaling5XBRAUniformContrast, 0.0);
 	
-	var verticalSurfaces = 4;
-	var horizontalSurfaces = 4;
-	var surfaceWidth = global.xdisplay / horizontalSurfaces;
-	var surfaceHeight = global.ydisplay / verticalSurfaces;
+
+	
+	
+	/*
 	var surfacesMatrix = array_create(
 		horizontalSurfaces, 
 		array_create(
@@ -95,17 +95,85 @@
 				surfaceWidth,
 				surfaceHeight)
 		));
+	*/
+	
+	
+	/*
+	currentShrinkTarget = {
+		verticalSurfaces: Integer
+		horiziontalSurfaces: Integer
+	}
+	*/
+	
+	
+	// API
+	if (keyboard_check_pressed(vk_numpad1)) {
+		targetSurfaceShrink = [ 1, 1 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad2)) {
+		targetSurfaceShrink = [ 2, 2 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad3)) {
+		targetSurfaceShrink = [ 3, 3 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad4)) {
+		targetSurfaceShrink = [ 4, 4 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad5)) {
+		targetSurfaceShrink = [ 5, 5 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad6)) {
+		targetSurfaceShrink = [ 6, 6 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad7)) {
+		targetSurfaceShrink = [ 7, 7 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad8)) {
+		targetSurfaceShrink = [ 8, 8 ];	
+	}
+	if (keyboard_check_pressed(vk_numpad9)) {
+		targetSurfaceShrink = [ 9, 9 ];	
+	}
+	
+	
+	var verticalSurfaces = global.vericalSurfaces;
+	var horizontalSurfaces = global.horizontalSurfaces;
+	var surfaceWidth = global.xdisplay / targetSurfaceShrink[0];
+	var surfaceHeight = global.ydisplay / targetSurfaceShrink[1];
+	var surfaceShrinkFactor = 0.5;
+	var isShrinking = currentSurfaceWidth > surfaceWidth ? -1.0 : 1.0;
+	var verticalSurfaceShrinkFactor = surfaceShrinkFactor;
+	
+	#region Shrinking function
+	if (isShrinking == -1.0) {
+		if (currentSurfaceWidth > surfaceWidth) {
+			currentSurfaceWidth += verticalSurfaceShrinkFactor * isShrinking;
+		}
+		var horizontalSurfacerShrinkFactor = (surfaceHeight / surfaceWidth) * surfaceShrinkFactor; //ratio
+		if (currentSurfaceHeight > surfaceHeight) {
+			currentSurfaceHeight += horizontalSurfacerShrinkFactor * isShrinking;
+		}
+	} else {
+		if (currentSurfaceWidth < surfaceWidth) {
+			currentSurfaceWidth += verticalSurfaceShrinkFactor * isShrinking;
+		}
+		var horizontalSurfacerShrinkFactor = (surfaceHeight / surfaceWidth) * surfaceShrinkFactor; //ratio
+		if (currentSurfaceHeight < surfaceHeight) {
+			currentSurfaceHeight += horizontalSurfacerShrinkFactor * isShrinking;
+		}
+	}
+	#endregion
 	
 	for (var yIndex = 0; yIndex < verticalSurfaces; yIndex++) {
 		for (var xIndex = 0; xIndex < horizontalSurfaces; xIndex++) {
-			var surfaceXOffset = surfaceWidth * xIndex;
-			var surfaceYOffset = surfaceHeight * yIndex;
+			var surfaceXOffset = currentSurfaceWidth * xIndex;
+			var surfaceYOffset = currentSurfaceHeight * yIndex;
 			draw_surface_stretched(
 				gameSurface, 
 				surfaceXOffset, 
 				surfaceYOffset, 
-				surfaceWidth, 
-				surfaceHeight);			
+				currentSurfaceWidth, 
+				currentSurfaceHeight);			
 		}
 	}
 	

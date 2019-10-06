@@ -9,7 +9,7 @@
 	if(global.showLirycs) {
 	
     drawShakeText(string(currentLyric),
-            choose(c_white, c_aqua, c_lime, c_red, c_blue, c_fuchsia, c_yellow),
+            [ c_white, c_aqua, c_lime, c_red, c_blue, c_fuchsia, c_yellow ],
             fa_middle,
             fa_bottom,
             pixelFontBig,

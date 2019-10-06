@@ -36,7 +36,7 @@
                 var timeLeft = bossInstance.behaviourTime;
                 var timeString = timeLeft - timeNow
                 drawShakeText(  "BOSS !!! " + string(timeString),
-                            choose(c_white, c_fuchsia, c_yellow),
+                            [ c_white, c_fuchsia, c_yellow ],
                             fa_middle,
                             fa_bottom,
                             pixelFontBig,

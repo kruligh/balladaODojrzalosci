@@ -58,7 +58,7 @@
 			//dev
 			
 			//global.showLirycs = false;
-			//global.stage = 11;
+			//global.stage = 9;
 			break;
 		case 9:
 		//case 20:
