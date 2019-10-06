@@ -9,22 +9,24 @@
         intr[0] += 5;
 	}
 	
-    draw_line(
+    draw_line_width(
 		((global.xdisplay / 2.0) - intr[0]),
 		global.ydisplay - abs(margin),
 		((global.xdisplay / 2.0) + intr[0]),
-		global.ydisplay - abs(margin));
+		global.ydisplay - abs(margin),
+		gridWidth);
     
     //Upper line
     if (intr[0] >= ((global.xdisplay / 2.0) * 0.9375)) {
         if(intr[1] < ((global.xdisplay / 2.0) * 0.09375)) {
             intr[1] += 1;
 		}
-        draw_line(
+        draw_line_width(
 			(global.xdisplay / 2.0) - intr[1],
 			margin,
 			(global.xdisplay / 2.0) + intr[1],
-			margin);
+			margin,
+			gridWidth);
     }
     
     //Middle lines
@@ -34,11 +36,12 @@
             intr[2] += 5;
         for(i = (x_view-line_down)/2; i <= line_down+distd; i+= distd)
         {  
-            draw_line(
+            draw_line_width(
 				i, 
 				intr[2] - margin,
 				(x_view/2) - l_up + j,
-				margin);
+				margin,
+				gridWidth);
             j += distu;
         }
     }
@@ -48,7 +51,7 @@
     //Falling lines
     draw_set_color(color[1])
     if (intr[2] >= global.ydisplay)
-        gridDrawLines();
+        gridDrawLines(gridWidth);
     draw_set_alpha(1);
    
    

@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "d329b84a-a98f-4b3f-9109-968217ce97a5",
+            "Value": {
+                "id": "0dff4205-2cd5-4ef7-b9c3-608ed60e2def",
+                "resourcePath": "shaders\\shaderUpscaling5XBRA\\shaderUpscaling5XBRA.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "d4527393-38b4-4039-9046-699f8e5f9f30",
             "Value": {
                 "id": "9b4c8e27-dd20-43e8-997c-901e18c08674",

@@ -5,19 +5,26 @@
 
 
 	if(emmiterStage2Timer < 60) {
+		if(emmiterStage2Timer mod 10 == 0){
+		
 		createElement(0, 10, sprMoney, true);
 		createElement(1, 10, sprMoney, true);
 		createElement(2, 10, sprMoney, true);
 		createElement(4, 10, sprMoney, true);
 		createElement(5, 10, sprMoney, true);
 		createElement(6, 10, sprMoney, true);
+		}
 	} else if(emmiterStage2Timer > 120 and emmiterStage2Timer < 180){
+		if(emmiterStage2Timer mod 10 == 0){
+		
+		
 		createElement(0, 10, sprMoney, true);
 		createElement(1, 10, sprMoney, true);
 		createElement(2, 10, sprMoney, true);
 		createElement(4, 10, sprMoney, true);
 		createElement(5, 10, sprMoney, true);
 		createElement(6, 10, sprMoney, true);
+		}
 	}
 	
 	if(emmiterStage2Timer > 140 and emmiterStage2Timer mod 30 == 0) {

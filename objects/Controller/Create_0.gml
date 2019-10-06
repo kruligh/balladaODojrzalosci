@@ -98,12 +98,12 @@
     
 
 ///Audio
-    audio_play_sound(ballada_o_dojrzalosci_master, 100, false);
+    //audio_play_sound(ballada_o_dojrzalosci_master, 100, false);
     
     #region Html5
 	
     if (!audio_is_playing(ballada_o_dojrzalosci_master)) {
-        audio_play_sound(ballada_o_dojrzalosci_master, 100, false);    
+        //audio_play_sound(ballada_o_dojrzalosci_master, 100, false);    
     }
 	
 	#endregion

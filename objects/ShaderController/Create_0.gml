@@ -2,6 +2,9 @@
 
     application_surface_draw_enable(false);
 	surface_resize(application_surface, global.xdisplay, global.ydisplay);
+	display_set_gui_size(global.xdisplay, global.ydisplay);
+	
+	gameSurface = surface_create(global.xdisplay, global.ydisplay);
 	
 	enum shaders {
         shader_rgb,

@@ -60,9 +60,54 @@
 			halfWidth, 0, 
 			halfWidth, display_get_height());
     } else {
+		
+		if (!surface_exists(gameSurface)) {
+			gameSurface = surface_create(global.xdisplay, global.ydisplay);	
+		}
+		
+		surface_set_target(gameSurface);
         draw_surface_stretched(application_surface, 0, 0, global.xdisplay, global.ydisplay);
+		surface_reset_target();
     }
     #endregion
 	
     shader_reset();
+	
+	
+	shaderUpscaling5XBRAUniformResolution = shader_get_uniform(shaderUpscaling5XBRA, "resolution");
+	shaderUpscaling5XBRAUniformBrightness = shader_get_uniform(shaderUpscaling5XBRA, "brightness");
+	shaderUpscaling5XBRAUniformContrast = shader_get_uniform(shaderUpscaling5XBRA, "contrast");
+	
+	shader_set(shaderUpscaling5XBRA);
+	shader_set_uniform_f(shaderUpscaling5XBRAUniformResolution, global.xdisplay, global.ydisplay);
+	shader_set_uniform_f(shaderUpscaling5XBRAUniformBrightness, 0.0);
+	shader_set_uniform_f(shaderUpscaling5XBRAUniformContrast, 0.0);
+	
+	var verticalSurfaces = 4;
+	var horizontalSurfaces = 4;
+	var surfaceWidth = global.xdisplay / horizontalSurfaces;
+	var surfaceHeight = global.ydisplay / verticalSurfaces;
+	var surfacesMatrix = array_create(
+		horizontalSurfaces, 
+		array_create(
+			verticalSurfaces, 
+			surface_create(
+				surfaceWidth,
+				surfaceHeight)
+		));
+	
+	for (var yIndex = 0; yIndex < verticalSurfaces; yIndex++) {
+		for (var xIndex = 0; xIndex < horizontalSurfaces; xIndex++) {
+			var surfaceXOffset = surfaceWidth * xIndex;
+			var surfaceYOffset = surfaceHeight * yIndex;
+			draw_surface_stretched(
+				gameSurface, 
+				surfaceXOffset, 
+				surfaceYOffset, 
+				surfaceWidth, 
+				surfaceHeight);			
+		}
+	}
+	
+	shader_reset();
 	

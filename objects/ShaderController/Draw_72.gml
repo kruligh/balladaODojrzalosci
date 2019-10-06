@@ -8,9 +8,6 @@
 	
 	draw_clear_alpha(c_black, 1.0);
 	
-
-
-
     if (red >= 254) || (red <= 1) {
         redDirection = redDirection * -1;
     }
@@ -29,14 +26,17 @@
 	backgroundEXTRAAngle += bFactor;
 	var backgroundAngle = (camera_get_view_angle(global.camera) * -5) + backgroundEXTRAAngle;
 	
-	if (backgroundCounter == 0) {
-		draw_sprite_ext(
-			menuBackgroundSprite, 0,
-			cameraXTarget,
-			cameraYTarget,
-			pixelScale,
-			pixelScale,
-			backgroundAngle,
-			make_color_rgb(red, green, blue),
-			1.0);
+	var enableBackgroundSpriteDrawing = false;
+	if (enableBackgroundSpriteDrawing) {
+		if (backgroundCounter == 0) {
+			draw_sprite_ext(
+				menuBackgroundSprite, 0,
+				cameraXTarget,
+				cameraYTarget,
+				pixelScale,
+				pixelScale,
+				backgroundAngle,
+				make_color_rgb(red, green, blue),
+				1.0);
+		}
 	}
